@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achadinhos Pin Bot</title>
+  <meta name="description" content="Ferramenta pessoal de automação de Pins de produtos afiliados (Amazon Brasil e Mercado Livre).">
+  <style>
+    :root { --texto:#1c2130; --suave:#5d6675; --borda:#e3e6ec; --destaque:#c1121f; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; max-width: 760px;
+           margin: 0 auto; padding: 48px 20px 72px; line-height: 1.65; color: var(--texto); }
+    header { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+    .logo { width:38px; height:38px; border-radius:50%; background:var(--destaque); color:#fff;
+            display:grid; place-items:center; font-weight:800; font-size:18px; }
+    h1 { font-size: 26px; margin: 0; }
+    .sub { color: var(--suave); margin: 0 0 28px; }
+    h2 { font-size: 17px; margin: 32px 0 10px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .cartao { border:1px solid var(--borda); border-radius:10px; padding:18px 20px; margin:20px 0; }
+    footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--borda);
+             color:var(--suave); font-size:13px; }
+    a { color: var(--destaque); }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">A</span>
+    <div>
+      <h1>Achadinhos Pin Bot</h1>
+      <p class="sub">Automação pessoal de Pins de produtos afiliados</p>
+    </div>
+  </header>
+
+  <p>O <strong>Achadinhos Pin Bot</strong> é uma ferramenta pessoal que publica Pins de
+     produtos afiliados no board do próprio operador, no Pinterest. Ele lê a página
+     pública de um produto na <strong>Amazon Brasil</strong> ou no <strong>Mercado Livre</strong>,
+     extrai nome, preço e imagem, gera título e descrição e cria um Pin com o link de afiliado.</p>
+
+  <div class="cartao">
+    <h2>Como funciona</h2>
+    <ul>
+      <li>O operador informa a URL do produto e o seu link de afiliado.</li>
+      <li>O aplicativo consulta a página pública para obter nome, preço e imagem.</li>
+      <li>Título e descrição são gerados por um modelo de linguagem.</li>
+      <li>Um Pin é criado no board do próprio operador via Pinterest API v5.</li>
+    </ul>
+  </div>
+
+  <div class="cartao">
+    <h2>Uso pessoal e volume</h2>
+    <ul>
+      <li>Ferramenta de uso exclusivamente pessoal, não oferecida a terceiros.</li>
+      <li>Não acessa contas de terceiros e não coleta dados de usuários.</li>
+      <li>Volume baixo: cerca de 5 a 20 Pins por dia.</li>
+      <li>Intervalo aleatório de 45 a 90 segundos entre publicações.</li>
+    </ul>
+  </div>
+
+  <h2>Privacidade</h2>
+  <p>Nenhum dado pessoal é coletado, vendido ou compartilhado. As credenciais ficam
+     armazenadas apenas no computador do operador. Leia a
+     <a href="privacidade.html">Política de Privacidade</a>.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas ou solicitações devem ser registradas em
+     <a href="https://github.com/rogeriosalvatico/achadinhos-pin-bot/issues" rel="noopener">github.com/rogeriosalvatico/achadinhos-pin-bot/issues</a>.</p>
+
+  <footer>
+    Achadinhos Pin Bot &middot; Última atualização: 28/10/2026
+  </footer>
+</body>
+</html>
