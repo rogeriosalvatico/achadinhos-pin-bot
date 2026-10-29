@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Achadinhos Pin Bot</title>
+  <title>Achadinhos Conteúdo</title>
   <link rel="icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
-  <meta name="description" content="Ferramenta pessoal de automação de Pins de produtos afiliados (Amazon Brasil e Mercado Livre).">
+  <meta name="description" content="Ferramenta pessoal de organização de conteúdo para Pinterest, com revisão manual de cada Pin.">
   <style>
     :root { --texto:#1c2130; --suave:#5d6675; --borda:#e3e6ec; --destaque:#c1121f; }
     * { box-sizing: border-box; }
@@ -30,23 +30,27 @@
   <header>
     <span class="logo">A</span>
     <div>
-      <h1>Achadinhos Pin Bot</h1>
-      <p class="sub">Automação pessoal de Pins de produtos afiliados</p>
+      <h1>Achadinhos Conteúdo</h1>
+      <p class="sub">Organização e publicação de Pins com revisão manual</p>
     </div>
   </header>
 
-  <p>O <strong>Achadinhos Pin Bot</strong> é uma ferramenta pessoal que publica Pins de
-     produtos afiliados no board do próprio operador, no Pinterest. Ele lê a página
-     pública de um produto na <strong>Amazon Brasil</strong> ou no <strong>Mercado Livre</strong>,
-     extrai nome, preço e imagem, gera título e descrição e cria um Pin com o link de afiliado.</p>
+  <p>O <strong>Achadinhos Conteúdo</strong> é uma ferramenta pessoal que ajuda o
+     operador a organizar conteúdo para o Pinterest. Ela lê a página pública de um
+     produto na <strong>Amazon Brasil</strong> ou no <strong>Mercado Livre</strong>,
+     extrai nome, preço e imagem e prepara um <strong>rascunho</strong> de Pin com
+     título e descrição sugeridos.</p>
 
   <div class="cartao">
     <h2>Como funciona</h2>
     <ul>
       <li>O operador informa a URL do produto e o seu link de afiliado.</li>
       <li>O aplicativo consulta a página pública para obter nome, preço e imagem.</li>
-      <li>Título e descrição são gerados por um modelo de linguagem.</li>
-      <li>Um Pin é criado no board do próprio operador via Pinterest API v5.</li>
+      <li>Título e descrição são sugeridos por um modelo de linguagem.</li>
+      <li>O operador <strong>revisa cada rascunho</strong>, edita o texto se quiser e
+          decide individualmente se publica ou descarta.</li>
+      <li>Somente após essa aprovação individual o Pin é enviado ao Pinterest, no
+          board do próprio operador.</li>
     </ul>
   </div>
 
@@ -55,8 +59,9 @@
     <ul>
       <li>Ferramenta de uso exclusivamente pessoal, não oferecida a terceiros.</li>
       <li>Não acessa contas de terceiros e não coleta dados de usuários.</li>
+      <li><strong>Não há publicação em lote</strong>: cada Pin exige uma aprovação
+          individual do operador.</li>
       <li>Volume baixo: cerca de 5 a 20 Pins por dia.</li>
-      <li>Intervalo aleatório de 45 a 90 segundos entre publicações.</li>
     </ul>
   </div>
 
@@ -70,7 +75,7 @@
      <a href="https://github.com/rogeriosalvatico/achadinhos-pin-bot/issues" rel="noopener">github.com/rogeriosalvatico/achadinhos-pin-bot/issues</a>.</p>
 
   <footer>
-    Achadinhos Pin Bot &middot; Última atualização: 28/10/2026
+    Achadinhos Conteúdo &middot; Última atualização: 29/10/2026
   </footer>
 </body>
 </html>
